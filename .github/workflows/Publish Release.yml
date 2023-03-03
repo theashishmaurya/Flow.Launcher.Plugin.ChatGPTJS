@@ -20,8 +20,8 @@ jobs:
         id: version
         uses: notiz-dev/github-action-json-property@release
         with:
-          path: 'plugin.json'
-          property: 'Version'
+          path: plugin.json
+          property: Version
       - name: Install dependencies
         run: |
           npm install

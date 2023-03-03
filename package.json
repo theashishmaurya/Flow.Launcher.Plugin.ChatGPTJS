@@ -1,0 +1,27 @@
+{
+  "name": "chat_gpt_plugin",
+  "version": "1.0.0",
+  "description": "A flow launcher plugin for chat GPT",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theashishmaurya/Flow.Launcher.Plugin.ChatGPTJS.git"
+  },
+  "keywords": [
+    "chat-gpt",
+    "flow-launcher-plugin",
+    "gpt-3"
+  ],
+  "author": "Ashish Maurya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theashishmaurya/Flow.Launcher.Plugin.ChatGPTJS/issues"
+  },
+  "homepage": "https://github.com/theashishmaurya/Flow.Launcher.Plugin.ChatGPTJS#readme",
+  "dependencies": {
+    "open": "^8.4.2"
+  }
+}

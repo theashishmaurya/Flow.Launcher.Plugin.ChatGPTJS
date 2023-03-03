@@ -1,33 +1,32 @@
-name : Publish Release
+name: Publish Release
 
-on: 
+on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [main]
     paths-ignore:
       - .github/workflows/*
-  
+
 jobs:
   publish:
     runs-on: ubuntu-latest
 
     steps:
-      -name: Set up Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '18.14.2'
-      -name: get version
-        id : version
+      - name: get version
+        id: version
         uses: notiz-dev/github-action-json-property@release
         with:
-          path : 'plugin.json'
-          property : 'Version'
-      -name: Install dependencies
+          path: 'plugin.json'
+          property: 'Version'
+      - name: Install dependencies
         run: |
           npm install
           zip -r flow.Launcher.Plugin.ChatGPTJS.zip . -x .git\* -x .github\* -x .vscode\* -x .idea\* -x .gitignore -x .gitattributes -x .editorconfig -x .prettierrc -x .eslintrc.json
-
-      -name: Create Release
+      - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
           files: flow.Launcher.Plugin.ChatGPTJS.zip

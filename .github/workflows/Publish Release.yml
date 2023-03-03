@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: List files in root directory
+        run: ls -la
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:

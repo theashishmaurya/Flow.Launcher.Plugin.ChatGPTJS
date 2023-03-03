@@ -7,6 +7,9 @@ on:
     paths-ignore: 
       - .github/workflows/*
 
+permissions:
+  contents: write
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -27,11 +30,11 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
-          zip -r Flow.Launcher.Plugin.HelloWorldNodeJS.zip . -x '*.git*'
+          zip -r Flow.Launcher.Plugin.ChatGPTJS.zip . -x '*.git*'
       - name: Publish
         uses: softprops/action-gh-release@v1
         with:
-          files: 'Flow.Launcher.Plugin.HelloWorldNodeJS.zip'
+          files: 'Flow.Launcher.Plugin.ChatGPTJS.zip'
           tag_name: "v${{steps.version.outputs.prop}}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

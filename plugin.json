@@ -7,5 +7,7 @@
     "Version": "1.0.0",
     "Language": "javascript",
     "Website": "https://github.com/Flow-Launcher/Flow.Launcher.Plugin.HelloWorldNodeJS",
-    "ExecuteFileName": "main.js"
+    "ExecuteFileName": "main.js",
+    "IcoPath": ""
+
   }

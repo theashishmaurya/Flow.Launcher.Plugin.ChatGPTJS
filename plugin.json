@@ -1,0 +1,11 @@
+{
+    "ID": "427af2d93887868f8179665uy661c6c3",
+    "ActionKeyword": "chat",
+    "Name": "Chat GPT",
+    "Description": "Chat with GPT-3",
+    "Author": "Ashish Maurya",
+    "Version": "1.0.0",
+    "Language": "javascript",
+    "Website": "https://github.com/Flow-Launcher/Flow.Launcher.Plugin.HelloWorldNodeJS",
+    "ExecuteFileName": "main.js"
+  }

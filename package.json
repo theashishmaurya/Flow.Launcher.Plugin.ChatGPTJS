@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/theashishmaurya/Flow.Launcher.Plugin.ChatGPTJS#readme",
   "dependencies": {
-    "open": "^8.4.2"
+    "open": "^8.4.2",
+    "openai": "^3.2.1"
   }
 }
